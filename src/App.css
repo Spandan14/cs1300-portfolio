@@ -6,3 +6,7 @@
   padding: 2rem;
   text-align: center;
 }
+
+input {
+  width: 7em; 
+}
