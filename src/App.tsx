@@ -178,6 +178,33 @@ function App() {
           <p className="text-center text-gray-400 text-sm">GitHub repo search, with active repository filter and suggestion highlight on focus with <code>down</code>.</p>
         </div>
       </div>
+
+       <br></br><br></br>
+      <h2 className="text-2xl text-left text-teal-400 px-4">  <b>3. the solution</b></h2>
+      <div>
+        <p className="text-left px-4 py-2">
+          A full redesign of GitHub's search box, following the given workflow, will greatly improve the user experience. More discussion after the diagrams.
+        </p>
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/initialbar.png"
+            alt="Initial State Diagram" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">Initial focus transition diagram for GitHub repository search.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/searchbarfull.png"
+            alt="Query State Diagram" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">Active search suggestion focus transition diagram for GitHub repository search.</p>
+        </div>
+      </div> 
     </div>
   )
 }
