@@ -110,7 +110,7 @@ function App() {
       <div>
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/chrome-mouseover.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/chrome-mouseover.png"
             alt="Chrome Mouseover Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -120,7 +120,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/chrome-keydown.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/chrome-keydown.png"
             alt="Chrome Keydown Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -130,7 +130,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/vsc-mouseover.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/vsc-mouseover.png"
             alt="Visual Studio Code Mouseover Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -140,7 +140,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/vsc-keydown.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/vsc-keydown.png"
             alt="Visual Studio Code Keydown Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -150,7 +150,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/github-mouseover.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/github-mouseover.png"
             alt="GitHub Mouseover Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -160,7 +160,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/github-keydown.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/github-keydown.png"
             alt="GitHub Keydown Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -170,7 +170,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/github-filters.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/github-filters.png"
             alt="GitHub Filters Focus Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -187,7 +187,7 @@ function App() {
         </p>
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/initialbar.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/initialbar.png"
             alt="Initial State Diagram" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -197,7 +197,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="/assets/searchbarfull.png"
+            src="https://spandan14.github.io/cs1300-portfolio/assets/searchbarfull.png"
             alt="Query State Diagram" 
             className="h-96 rounded-lg shadow-lg"
           />
