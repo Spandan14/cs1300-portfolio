@@ -1,4 +1,5 @@
 import './App.css'
+//import '../public/assets/chrome-mouseover.png'
 
 function App() {
   return (
@@ -106,6 +107,77 @@ function App() {
 
       <br></br><br></br>
       <h2 className="text-2xl text-left text-yellow-400 px-4">  <b>2. the evidence</b></h2>
+      <div>
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/chrome-mouseover.png"
+            alt="Chrome Mouseover Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">Chrome URL search, with tool tips on mouse hover.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/chrome-keydown.png"
+            alt="Chrome Keydown Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">Chrome URL search, with suggestion highlight and action tool tips on focus with <code>tab</code>.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/vsc-mouseover.png"
+            alt="Visual Studio Code Mouseover Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">VSC action search, with suggestion highlight and action tool tips on mouse hover.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/vsc-keydown.png"
+            alt="Visual Studio Code Keydown Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">VSC action search, with suggestion highlight and action tool tips on focus with <code>down</code>.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/github-mouseover.png"
+            alt="GitHub Mouseover Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">GitHub repo search, with suggestion highlight on mouse hover.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/github-keydown.png"
+            alt="GitHub Keydown Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">GitHub repo search, with suggestion highlight on focus with <code>down</code>.</p>
+        </div>
+
+        <div className="w-full flex flex-col items-center space-y-2 p-4">
+          <img 
+            src="cs1300-portfolio/assets/github-filters.png"
+            alt="GitHub Filters Focus Demo" 
+            className="h-96 rounded-lg shadow-lg"
+          />
+
+          <p className="text-center text-gray-400 text-sm">GitHub repo search, with active repository filter and suggestion highlight on focus with <code>down</code>.</p>
+        </div>
+      </div>
     </div>
   )
 }
