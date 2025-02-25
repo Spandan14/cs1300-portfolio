@@ -110,7 +110,7 @@ function App() {
       <div>
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/chrome-mouseover.png"
+            src="/assets/chrome-mouseover.png"
             alt="Chrome Mouseover Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -120,7 +120,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/chrome-keydown.png"
+            src="/assets/chrome-keydown.png"
             alt="Chrome Keydown Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -130,7 +130,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/vsc-mouseover.png"
+            src="/assets/vsc-mouseover.png"
             alt="Visual Studio Code Mouseover Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -140,7 +140,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/vsc-keydown.png"
+            src="/assets/vsc-keydown.png"
             alt="Visual Studio Code Keydown Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -150,7 +150,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/github-mouseover.png"
+            src="/assets/github-mouseover.png"
             alt="GitHub Mouseover Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -160,7 +160,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/github-keydown.png"
+            src="/assets/github-keydown.png"
             alt="GitHub Keydown Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -170,7 +170,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/github-filters.png"
+            src="/assets/github-filters.png"
             alt="GitHub Filters Focus Demo" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -179,7 +179,7 @@ function App() {
         </div>
       </div>
 
-       <br></br><br></br>
+      <br></br><br></br>
       <h2 className="text-2xl text-left text-teal-400 px-4">  <b>3. the solution</b></h2>
       <div>
         <p className="text-left px-4 py-2">
@@ -187,7 +187,7 @@ function App() {
         </p>
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/initialbar.png"
+            src="/assets/initialbar.png"
             alt="Initial State Diagram" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -197,7 +197,7 @@ function App() {
 
         <div className="w-full flex flex-col items-center space-y-2 p-4">
           <img 
-            src="cs1300-portfolio/assets/searchbarfull.png"
+            src="/assets/searchbarfull.png"
             alt="Query State Diagram" 
             className="h-96 rounded-lg shadow-lg"
           />
@@ -205,6 +205,14 @@ function App() {
           <p className="text-center text-gray-400 text-sm">Active search suggestion focus transition diagram for GitHub repository search.</p>
         </div>
       </div> 
+
+      <br></br><br></br>
+      <h2 className="text-2xl text-left text-violet-400 px-4">  <b>4. reflections</b></h2>
+      <div>
+        <p className="text-left px-4 py-2">
+          A full redesign of GitHub's search box, following the given workflow, will greatly improve the user experience. The new workflow incorporates the hints that already exist in the GitHub search box and provide an incredibly high level of accessibility for users with vision impairments, while adding more capabilities for power-users who really want to maximize speed and efficiency when searching for various things. GitHub's repo search currently fails to consider that a large amount of the users of this feature are developers who will need to quickly look for tons of resources, such as PRs, issues, code snippets, full repositories, organizations, and more. The current search box does not address this mismatch - in the creation of a universal design, GitHub forgot about its primary users. I think the overall designs of all three services is good, and provides for all users. One example is the aforementioned hints GitHub provides, but the tool tips that the screenreader can read are also helpful for the visually impaired users. I think most designs are prioritizing keyboard and screen reader usage, as these tend to naturally be more accessible and user-friendly than mice. 
+        </p>
+      </div>
     </div>
   )
 }
