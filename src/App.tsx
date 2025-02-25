@@ -9,6 +9,7 @@ function App() {
             className="text-5xl border-2 border-slate-300 p-2 rounded-md"   
             placeholder="search box" /> 
       </div>
+
       <br></br><br></br>
       <h2 className="text-2xl text-left text-red-400 px-4">  <b>1. the problem</b></h2>
       <>
@@ -33,6 +34,13 @@ function App() {
               <li><span className="text-red-400">no hints for what <code>Enter</code> would do</span></li>
             </ul>
           
+            <br></br>
+            <p><b><code>accessible</code> outputs</b></p>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-white">
+              <li>selected suggestions are highlighted, selected actions are outlined</li>
+              <li>actions have tool tips and screen reader capabilities</li>
+              <li>suggestions have screen reader capabilities</li>
+            </ul>
           </div>
 
           <div className="text-left w-full space-y-4">
@@ -55,6 +63,14 @@ function App() {
               <li><code>Left/Right</code>: allows for search input editing</li>
               <li><span className="text-red-400">no hints for what <code>Enter</code> would do</span></li>
             </ul>
+            
+            <br></br>
+            <p><b><code>accessible</code> outputs</b></p>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-white">
+              <li>selected suggestions are highlighted, selected actions are outlined</li>
+              <li>actions have tool tips and screen reader capabilities</li>
+              <li>suggestions have screen reader capabilities</li>
+            </ul>
           </div>
 
           <div className="text-left w-full space-y-4">
@@ -76,9 +92,20 @@ function App() {
               <li><code>Left/Right</code>: <span className="text-red-400">does not allow for search input editing</span></li>
               <li>hints for what <code>Enter</code> would do</li>
             </ul>
+
+            <br></br>
+            <p><b><code>accessible</code> outputs</b></p>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-white">
+              <li>selected suggestions are highlighted, selected filters are in blue</li>
+              <li>suggestions have screen reader capabilities</li>
+              <li>hints have screen reader capabilities</li>
+            </ul>
           </div>
         </div>
       </>
+
+      <br></br><br></br>
+      <h2 className="text-2xl text-left text-yellow-400 px-4">  <b>2. the evidence</b></h2>
     </div>
   )
 }
