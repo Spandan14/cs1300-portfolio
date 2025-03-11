@@ -37,10 +37,141 @@ function Persona() {
         <img
           src="https://spandan14.github.io/cs1300-portfolio/assets/personas/0_state.png"
           alt="Initial Andrews Mockup"
-          className="h-96 rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg"
         />
 
         <p className="text-center text-gray-400 text-sm">Initial mockup of Andrews drinks area.</p>
+      </div>
+
+      <br></br><br></br>
+      <h2 className="text-2xl text-left text-teal-400 px-4">  <b>2. keen observations </b></h2>
+      <div className="w-full flex flex-col space-v-2">
+
+        <p className="text-left px-4 py-2">
+          some initial people-watching and observation of Andrews showed that:
+        </p>
+
+        <ul className="px-12 mt-4 space-y-2 list-disc text-left list-inside text-white">
+          <li>people often <b className="text-red-300">wait long times</b> for other people to finish getting their drinks</li>
+          <li>people have a hard time with the <b className="text-red-300">ice accumulating in the dispenser</b> gates and giving them less space to pour their drink</li>
+          <li>the screen can be <b className="text-red-300">laggy and unresponsive</b> at times, and <b className="text-red-300">does not show the number of sub-items</b> that are available</li>
+          <li>people further back in line have <b className="text-red-300">no idea of how many options</b> are still available</li>
+          <li>gathering cups and straws from the side is difficult as it only works <b className="text-red-300">for one person at a time</b></li>
+          <li>the secondary dispensers are <b className="text-red-300">wasteful in area</b> and don't offer many options</li>
+        </ul>
+
+        <br></br>
+        <p className="text-left px-4 py-2">
+          and some <b>more detailed</b> people-talking gave us 3 great interviews:
+        </p>
+
+        <div className="flex justify-center w-full space-x-4 p-4">
+
+          <div className="text-left w-full space-y-4">
+            <h3 className="text-xl"><b className="text-red-500">Mr. Andrews Pho</b></h3>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-white">
+              <li className="text-gray-400"><i>How intuitive did you find the interface when selecting your drink?</i>
+                <ul>
+                  <li className="font-bold text-white">- Found the interface frustrating due to long waits and unavailable drinks.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>Were there any moments where you weren’t sure what to do next?</i>
+                <ul>
+                  <li className="font-bold text-white">- Struggled with unavailable drink options not being clearly marked.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>How would you describe the overall responsiveness of the touchscreen?</i>
+                <ul>
+                  <li className="font-bold text-white">- Felt the touchscreen was slow and unresponsive.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>Were there any issues or inconveniences you encountered while using the dispenser?</i>
+                <ul>
+                  <li className="font-bold text-white">- Frustrated by long lines, slow responsiveness, and missing drink options.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>If you could change one thing about this dispenser, what would it be?</i>
+                <ul>
+                  <li className="font-bold text-white">- Wanted a faster system with clearer indications of unavailable drinks.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div className="text-left w-full space-y-4">
+            <h3 className="text-xl"><b className="text-teal-500">Ms. Chili Crisp</b></h3>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-white">
+              <li className="text-gray-400"><i>How intuitive did you find the interface when selecting your drink?</i>
+                <ul>
+                  <li className="font-bold text-white">- Found the interface easy to navigate and intuitive.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>Were there any moments where you weren’t sure what to do next?</i>
+                <ul>
+                  <li className="font-bold text-white">- Had no confusion and found the process straightforward.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>How would you describe the overall responsiveness of the touchscreen?</i>
+                <ul>
+                  <li className="font-bold text-white">- Found the touchscreen responsive with no noticeable lag.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>Were there any issues or inconveniences you encountered while using the dispenser?</i>
+                <ul>
+                  <li className="font-bold text-white">- Encountered no issues and had a smooth experience.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>If you could change one thing about this dispenser, what would it be?</i>
+                <ul>
+                  <li className="font-bold text-white">- Thought the system was fine but would like more flavor options.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div className="text-left w-full space-y-4">
+            <h3 className="text-xl"><b className="text-amber-500">Dr. Yakisoba</b></h3>
+            <ul className="mt-4 space-y-2 list-disc list-inside text-white">
+              <li className="text-gray-400"><i>How intuitive did you find the interface when selecting your drink?</i>
+                <ul>
+                  <li className="font-bold text-white">- Thought the selection was fine but was frustrated by the ice accumulating in the dispenser.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>Were there any moments where you weren’t sure what to do next?</i>
+                <ul>
+                  <li className="font-bold text-white">- Was unsure why the ice wasn't being collected at the bottom and piling up.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>How would you describe the overall responsiveness of the touchscreen?</i>
+                <ul>
+                  <li className="font-bold text-white">- Thought it was usable but was distracted by the ice issue.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>Were there any issues or inconveniences you encountered while using the dispenser?</i>
+                <ul>
+                  <li className="font-bold text-white">- Annoyed by the broken ice collection and the sticky, messy area.</li>
+                </ul>
+              </li>
+
+              <li className="text-gray-400"><i>If you could change one thing about this dispenser, what would it be?</i>
+                <ul>
+                  <li className="font-bold text-white">- Suggested fixing the ice dispenser to dispense evenly and improving cleanliness.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
 
       </div>
     </div>
