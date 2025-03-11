@@ -188,7 +188,7 @@ function Persona() {
                 alt="Initial Andrews Mockup"
                 className="rounded-lg shadow-lg"
               />
-              <p className="text-center text-gray-400 text-sm">Initial mockup of Andrews drinks area.</p>
+              <p className="text-center text-gray-400 text-sm">good end of spectrum.</p>
             </div>
 
             <div className="text-left w-full space-y-4">
@@ -198,7 +198,56 @@ function Persona() {
                 alt="Initial Andrews Mockup"
                 className="rounded-lg shadow-lg"
               />
-              <p className="text-center text-gray-400 text-sm">Initial mockup of Andrews drinks area.</p>
+              <p className="text-center text-gray-400 text-sm">bad end of spectrum.</p>
+            </div>
+          </div>
+        </div>
+
+        <br></br><br></br>
+        <h2 className="text-2xl text-left text-red-400 px-4">  <b>4. storyboard</b></h2>
+        <div className="w-full flex flex-col space-v-2">
+          <br></br>
+          <p className="text-left px-4 py-2">
+            here's a big storyboard to explain it all:
+          </p>
+
+          <div className="flex justify-center w-full space-x-4 p-4">
+            <div className="text-left w-full space-y-4">
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/0_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/1_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/2_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/3_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/4_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/5_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://spandan14.github.io/cs1300-portfolio/assets/personas/6_state.png"
+                alt="Initial Andrews Mockup"
+                className="rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
