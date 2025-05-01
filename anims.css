@@ -1,0 +1,28 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.tagline-container {
+  postition: relative;
+}
+
+#dynamic-tagline {
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  line-height: 1.2;
+  min-height: 1.2em;
+  position: absolute;
+}
+
+#dynamic-tagline::after {
+  content: "";
+  position: absolute;
+  width: 0.6ch; /* width of roughly one character */
+  height: 1.2em;
+  background: #939393;
+  animation: blink 0.75s step-end infinite;
+  pointer-events: none;
+}
