@@ -68,8 +68,8 @@
       <span class="tab" data-tab="graphics">graphics.gl</span>
     </div>
 
-    <div id="tabs-container">
-      <div data-tab-content="design" class="mt-4 lg:mt-8 mb-8">
+    <div id="tabs-container" class="mt-4 lg:mt-8 mb-8">
+      <div data-tab-content="design" class="transition-all opacity-100 duration-500 overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
           <!-- Card 1 -->
           <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
@@ -90,12 +90,31 @@
               <span class="bg-blue-700 font-bold text-white">[RUN]</span> [2025-05-01 16:22] uptime: 25 hrs 
             </p>
           </div>
+
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10 max-h-[100px] max-w-[100px]" src="./assets/vector/search.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">giving the search box a makeover</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-blue pt-1 px-4 leading-tight">
+              <span class="bg-blue-700 font-bold text-white">[RUN]</span> [2025-05-01 16:22] uptime: 25 hrs 
+            </p>
+          </div>
         </div>
       </div>
 
-      <div data-tab-content="systems" class="mt-4 lg:mt-8 mb-8">
+      <div data-tab-content="systems" class="transition-all max-h-0 opacity-0 duration-500 overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
           <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+          
           <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
             <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
             <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
@@ -107,7 +126,7 @@
         </div>
       </div>
 
-      <div data-tab-content="graphics" class="mt-4 lg:mt-8 mb-8">
+      <div data-tab-content="graphics" class="transition-all max-h-0 opacity-0 duration-500 overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
           <!-- Card 1 -->
           <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">

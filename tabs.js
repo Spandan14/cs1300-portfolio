@@ -6,9 +6,15 @@ tabs.forEach(tab => {
         const target = tab.getAttribute('data-tab');
 
         contents.forEach(c => {
-            c.classList.add('hidden');
             if (c.getAttribute('data-tab-content') === target) {
-                c.classList.remove('hidden');
+                c.classList.remove('max-h-0', 'opacity-0', 'hidden');
+                c.classList.add('opacity-100', 'glitch-pulse');
+                setTimeout(() => {
+                    c.classList.remove('glitch-pulse');
+                }, 300);
+            } else {
+                c.classList.remove('opacity-100', 'glitch-pulse');
+                c.classList.add('max-h-0', 'opacity-0', 'hidden');
             }
         });
 
