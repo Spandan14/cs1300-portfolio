@@ -26,6 +26,12 @@
   font-style: italic;
 }
 
+svg {
+  overflow: visible;
+  color: black;
+  foreground-color: black;
+}
+
 
 .terminal-green {
     color: #216A00;

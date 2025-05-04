@@ -15,7 +15,7 @@
       <h6 class="text-xs sm:text-lg leading-tight" id="login-time">
       </h6>
       <h1 class="text-6xl lg:text-8xl leading-tight">
-          <span class="whitespace-nowrap">> spandan </span>
+          <span class="whitespace-nowrap">$ spandan </span>
           <span class="block sm:inline">goel</span>
       </h1>
       <h2 class="text-4xl lg:text-5xl leading-tight mt-3">
@@ -52,36 +52,81 @@
           </div>
         </h4>
     </div>
+
+    <div id="scroll-arrow" class="flex justify-center mt-12 2xl:mt-24 sm:mb-4 2xl:mb-16 sm:flex lg:hidden 2xl:flex"> 
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-70 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+
+    <div class="tabs-selector text-black flex items-center mt-24 lg:mb-8 gap-6 sm:text-xs lg:text-4xl font-mono cursor-pointer">
+      $
+      <span class="tab terminal-blue font-bold" data-tab="design">design.js</span>
+      |
+      <span class="tab" data-tab="systems">systems.cpp</span>
+      |
+      <span class="tab" data-tab="graphics">graphics.gl</span>
+    </div>
+
+    <div id="tabs-container">
+      <div data-tab-content="design" class="mt-4 lg:mt-8 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10 max-h-[100px] max-w-[100px]" src="./assets/vector/search.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">giving the search box a makeover</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-blue pt-1 px-4 leading-tight">
+              <span class="bg-blue-700 font-bold text-white">[RUN]</span> [2025-05-01 16:22] uptime: 25 hrs 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-tab-content="systems" class="mt-4 lg:mt-8 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-tab-content="graphics" class="mt-4 lg:mt-8 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
     
-  <div id="scroll-arrow" class="flex justify-center sm:mt-4 2xl:mt-16 sm:mb-4 2xl:mb-16 sm:flex lg:hidden 2xl:flex"> 
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-70 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-    </svg>
-  </div>
-  
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-[90%] max-w-[1000px] mx-auto px-4 mt-24 mb-24">
-    <!-- Card 1 -->
-    <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-center items-center">
-      <h3 class="article-title text-center text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">iterative::warp_<wbr>community</h3>
-      <p class="text-center text-xl lg:text-2xl font-[CommitMono] mt-1">connecting Warp users <i>inside</i> the terminal</p>
-      <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md terminal-green pt-1 px-4 leading-tight">
-        <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build complete in 25 hrs 
-      </p>
-    </div>
-
-    <!-- Card 1 -->
-    <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-center items-center">
-      <h3 class="article-title text-center text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">iterative::warp_<wbr>community</h3>
-      <p class="text-center text-xl lg:text-2xl font-[CommitMono] mt-1">connecting Warp users <i>inside</i> the terminal</p>
-      <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md terminal-blue pt-1 px-4 leading-tight">
-        <span class="bg-blue-700 font-bold text-white">[RUN]</span> [2025-05-01 16:22] elapsed time... +25 hrs 
-      </p>
-    </div>
-    <!-- Add more cards here -->
-  </div>
   <script src="./details.js"></script>
   <script src="./anims.js"></script>
+  <script src="./tabs.js"></script>
 </body>
 </html>
