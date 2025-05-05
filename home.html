@@ -11,14 +11,27 @@
 </head>
 <body class="scroll-smooth bg-white text-black font-[CommitMono]">
   <div class="w-[90%] max-w-[1000px] mx-auto px-4 py-8">
-    <div class="navbar flex justify-between items-center mb-16">
-      <div class="flex items-center text-2xl">
+    <div class="navbar flex justify-between items-center mb-4 lg:mb-16">
+      <div class="hidden lg:flex items-center text-3xl lg:text-2xl">
         <a href="./home.html">../spandan goel</a>
       </div>
-      <div class="flex items-center text-2xl gap-8">
+
+      <div class="hidden lg:flex items-center text-2xl gap-8">
         <a class="font-bold underline terminal-blue" href="#tab-selection">projects</a>
         <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
       </div>
+
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-5xl">
+          <span class="inline-block align-top">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0 lg:hidden flex-col text-xl gap-4 mb-8">
+      $
+      <a class="font-bold underline terminal-blue py-1" href="#tab-selection">projects</a>
+      <a class="underline py-1" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
     </div>
 
     <header class="tagline-container">
@@ -181,5 +194,6 @@
   <script src="./details.js"></script>
   <script src="./anims.js"></script>
   <script src="./tabs.js"></script>
+  <script src="./navbar.js"></script>
 </body>
 </html>
