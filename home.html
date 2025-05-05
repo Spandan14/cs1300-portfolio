@@ -9,8 +9,18 @@
 
   <link rel="stylesheet" href="./anims.css"></link>
 </head>
-<body class="bg-white text-black font-[CommitMono]">
+<body class="scroll-smooth bg-white text-black font-[CommitMono]">
   <div class="w-[90%] max-w-[1000px] mx-auto px-4 py-8">
+    <div class="navbar flex justify-between items-center mb-16">
+      <div class="flex items-center text-2xl">
+        <a href="./home.html">../spandan goel</a>
+      </div>
+      <div class="flex items-center text-2xl gap-8">
+        <a class="font-bold underline terminal-blue" href="#tab-selection">projects</a>
+        <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+      </div>
+    </div>
+
     <header class="tagline-container">
       <h6 class="text-xs sm:text-lg leading-tight" id="login-time">
       </h6>
@@ -23,7 +33,7 @@
       </h2>
     </header>
 
-    <div class="backtrace mt-72 lg:mt-96">
+    <div class="backtrace mt-72 lg:mt-[22rem] 2xl:mt-72">
         <h4 class="text-xl sm:text-3xl terminal-red font-bold">
             backtrace [career.cs]:
         </h4>
@@ -59,7 +69,7 @@
       </svg>
     </div>
 
-    <div class="tabs-selector relative text-black flex items-center mt-24 lg:mb-8 gap-6 sm:text-xs lg:text-4xl font-mono cursor-pointer">
+    <div id="tab-selection" class="scroll-mt-4 tabs-selector relative text-black flex items-center mt-24 lg:mb-8 gap-6 sm:text-xs lg:text-4xl font-mono cursor-pointer">
 
       <div id="arrow-left" class="hidden lg:block absolute left-0 -ml-8 lg:-ml-12 2xl:-ml-24 z-10 top-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
