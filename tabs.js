@@ -7,14 +7,14 @@ tabs.forEach(tab => {
 
         contents.forEach(c => {
             if (c.getAttribute('data-tab-content') === target) {
-                c.classList.remove('max-h-0', 'opacity-0', 'hidden');
-                c.classList.add('opacity-100', 'glitch-pulse');
+                c.classList.remove('max-h-0', 'opacity-0', 'hidden', 'max-w-0');
+                c.classList.add('opacity-00', 'glitch-pulse');
                 setTimeout(() => {
                     c.classList.remove('glitch-pulse');
                 }, 300);
             } else {
-                c.classList.remove('opacity-100', 'glitch-pulse');
-                c.classList.add('max-h-0', 'opacity-0', 'hidden');
+                c.classList.remove('opacity-00', 'glitch-pulse');
+                c.classList.add('max-h-0', 'opacity-0', 'hidden', 'max-w-0');
             }
         });
 
@@ -27,3 +27,32 @@ tabs.forEach(tab => {
         tab.classList.add('font-bold');
     });
 });
+
+const leftArrow = document.getElementById('arrow-left');
+const rightArrow = document.getElementById('arrow-right');
+
+leftArrow.addEventListener('click', () => {
+    const currentTab = document.querySelector('.terminal-blue');
+    const currentIndex = Array.from(tabs).indexOf(currentTab);
+    const nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+    tabs[nextIndex].click();
+});
+
+rightArrow.addEventListener('click', () => {
+    const currentTab = document.querySelector('.terminal-blue');
+    const currentIndex = Array.from(tabs).indexOf(currentTab);
+    const nextIndex = (currentIndex + 1) % tabs.length;
+    tabs[nextIndex].click();
+});
+
+const dropdown = document.getElementById('tab-select');
+
+dropdown.addEventListener('change', () => {
+    const selectedTab = dropdown.value;
+    tabs.forEach(tab => {
+        if (tab.getAttribute('data-tab') === selectedTab) {
+            tab.click();
+        }
+    });
+});
+
