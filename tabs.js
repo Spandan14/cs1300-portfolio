@@ -21,10 +21,12 @@ tabs.forEach(tab => {
         tabs.forEach(t => {
             t.classList.remove('terminal-blue');
             t.classList.remove('font-bold');
+            t.classList.remove('selected-tab');
         });
 
         tab.classList.add('terminal-blue');
         tab.classList.add('font-bold');
+        tab.classList.add('selected-tab');
     });
 });
 
@@ -32,14 +34,14 @@ const leftArrow = document.getElementById('arrow-left');
 const rightArrow = document.getElementById('arrow-right');
 
 leftArrow.addEventListener('click', () => {
-    const currentTab = document.querySelector('.terminal-blue');
+    const currentTab = document.querySelector('.selected-tab');
     const currentIndex = Array.from(tabs).indexOf(currentTab);
     const nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
     tabs[nextIndex].click();
 });
 
 rightArrow.addEventListener('click', () => {
-    const currentTab = document.querySelector('.terminal-blue');
+    const currentTab = document.querySelector('.selected-tab');
     const currentIndex = Array.from(tabs).indexOf(currentTab);
     const nextIndex = (currentIndex + 1) % tabs.length;
     tabs[nextIndex].click();

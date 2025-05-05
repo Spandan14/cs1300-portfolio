@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spandan Goel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./overall.css"></link>
+
+  <link rel="stylesheet" href="./anims.css"></link>
+</head>
+<body class="scroll-smooth bg-white text-black font-[CommitMono]">
+  <div class="w-[90%] max-w-[1000px] mx-auto px-4 py-8">
+    <div class="navbar flex justify-between items-center mb-4 lg:mb-16">
+      <div class="hidden lg:flex items-center text-3xl lg:text-2xl">
+        <a href="./home.html">../spandan goel</a>
+      </div>
+
+      <div class="hidden lg:flex items-center text-2xl gap-8">
+        <a class="font-bold underline terminal-blue" href="./home.html#tab-selection">projects</a>
+        <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+      </div>
+
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-5xl">
+          <span class="inline-block align-top">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="transition-all duration-300 ease-in-out overflow-hidden ml-1 max-h-0 opacity-0 lg:hidden flex-col text-xl gap-4 mb-8">
+      $
+      <a class="underline" href="./home.html">../sg14</a>
+      <a class="font-bold underline terminal-blue py-1" href="#tab-selection">projects</a>
+      <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+    </div>
+
+    <header class="tagline-container">
+      <h1 class="text-6xl lg:text-8xl font-bold leading-tight mt-3">
+        an iterative design for Warp community
+      </h1>
+      <h2 class="text-3xl lg:text-5xl leading-tight mt-3">
+        connecting Warp users <i>inside</i> the terminal   
+      </h2>
+
+      <h3 class="text-md lg:text-2xl 2xl:text-xl leading-tight mt-8">
+        -rw-r--r-- 1 spandan <span class="font-bold">designers 27.5H</span> Apr 30 22:13 warp_community 
+      </h3>
+
+      <p class="text-md lg:text-2xl 2xl:text-xl lg:mb-24 2xl:mb-0 leading-tight mt-8">
+        optimizing whiteboard sketches... 100%<br>
+        parsing UI components... 100%<br>
+        smashing usage metrics... 50%<br>
+      </p>
+
+      <div id="scroll-arrow" class="flex justify-center mt-24 lg:mt-18 mb-36 2xl:mb-24 sm:flex lg:hidden 2xl:flex"> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-70 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </header>
+
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl leading-tight">[0] introduction</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4">
+          yap yap yap yap yap yap
+      </p>
+    </div>
+  </div>
+    
+  <script src="./details.js"></script>
+  <script src="./anims.js"></script>
+  <script src="./tabs.js"></script>
+  <script src="./navbar.js"></script>
+</body>
+</html>
