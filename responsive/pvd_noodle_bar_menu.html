@@ -14,9 +14,23 @@
   <div class="header-section py-2 flex flex-col justify-around align-center items-center">
     <!-- header -->
     <div class="relative flex justify-center items-center w-full">
-      <button id="menuToggle" class="block lg:hidden text-white absolute left-4 text-5xl focus:outline-none">
+      <button id="menuToggle" class="block lg:hidden text-white absolute left-4 text-5xl focus:outline-none" onclick="toggleMobileMenu()">
         &#9776; <!-- hamburger icon -->
       </button>
+
+      <div id="mobileDropdown" class="absolute top-full mt-2 left-0 right-0 z-20 lg:hidden overflow-hidden transition-all duration-500 max-h-0">
+          <div class="flex flex-col items-center header-items bg-black text-white font-playfair text-xl py-4 gap-2">
+            <a href="">MENU</a>
+            <a href="">DRINKS</a>
+            <a href="">ARTS</a>
+            <a href="">RESERVE</a>
+            <a href="">PARTIES</a>
+            <a href="">CATERING</a>
+            <a href="">JOBS</a>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+          </div>
+        </div>
       <h1 class="align-center items-center text-center font-playfair text-4xl lg:text-3xl 2xl:text-2xl"><span class="leading-none text-white">PROVIDENCE</span><br><span class="leading-none text-hotpink font-black">NOODLE BAR</span></h1>
     </div>
     <hr class="hidden lg:flex border-hotpink lg:my-1 w-[75%]">
