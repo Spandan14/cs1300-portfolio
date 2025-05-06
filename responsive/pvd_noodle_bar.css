@@ -1,0 +1,52 @@
+/* Define font families */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.header-section {
+  background-color: #2D373D;
+}
+
+.text-hotpink {
+  color: #EF2857;
+}
+
+.border-hotpink {
+  border-color: #EF2857;
+}
+
+.header-items a:hover {
+  color: #EF2857;
+}
+
+.header-items i:hover {
+  color: #EF2857;
+}
+
+.header-items a {
+  color: #FFFFFF;
+}
+
+.text-golden {
+  color: #A77D27;
+}
+
+.text-forest {
+  color: #254C41;
+}
+
+.text-graphite {
+  color: #19171c;
+}
+
+img {
+  border: 2px solid #19171c;
+}

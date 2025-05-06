@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Providence Noodle Bar - Food Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./pvd_noodle_bar.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="scroll-smooth bg-white text-black">
+  <div class="header-section py-2 flex flex-col justify-around align-center items-center">
+    <!-- header -->
+    <div class="relative flex justify-center items-center w-full">
+      <button id="menuToggle" class="block lg:hidden text-white absolute left-4 text-5xl focus:outline-none" onclick="toggleMobileMenu()">
+        &#9776; <!-- hamburger icon -->
+      </button>
+
+      <div id="mobileDropdown" class="absolute top-full mt-2 left-0 right-0 z-20 lg:hidden overflow-hidden transition-all duration-500 max-h-0">
+          <div class="flex flex-col items-center header-items bg-black text-white font-playfair text-xl py-4 gap-2">
+            <a href="">MENU</a>
+            <a href="">DRINKS</a>
+            <a href="">ARTS</a>
+            <a href="">RESERVE</a>
+            <a href="">PARTIES</a>
+            <a href="">CATERING</a>
+            <a href="">JOBS</a>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+          </div>
+        </div>
+      <h1 class="align-center items-center text-center font-playfair text-4xl lg:text-3xl 2xl:text-2xl"><span class="leading-none text-white">PROVIDENCE</span><br><span class="leading-none text-hotpink font-black">NOODLE BAR</span></h1>
+    </div>
+    <hr class="hidden lg:flex border-hotpink lg:my-1 w-[75%]">
+    <div class="hidden lg:flex flex-row gap-4 2xl:gap-8 header-items text-xl justify-betweeen items-center font-playfair"> <a href="">MENU</a> 
+      <a href="">DRINKS</a>
+      <a href="">ARTS</a>
+      <a href="">RESERVE</a>
+      <a href="">PARTIES</a>
+      <a href="">CATERING</a>
+      <a href="">JOBS</a>
+      <i class="fab fa-instagram text-current text-white text-1xl"></i>
+      <i class="fab fa-google text-current text-white text-1xl"></i>
+    </div>
+  </div> 
+
+  <div class="w-[85%] lg:w-[75%] max-w-[1200px] py-4 mx-auto">
+    <h1 class="font-playfair font-bold text-7xl lg:text-8xl mb-2">
+      <i>menu</i>
+    </h1> 
+
+    <p class="font-playfair text-xl lg:text-3xl 2xl:text-4xl">
+      <i>many items on our menu come with <span class="font-bold text-golden">pairings</span>, which play a supporting yet critical part in the dish.</i>
+    </p>
+    <br>
+    <p class="font-playfair text-xl lg:text-3xl 2xl:text-4xl">
+      <i>many entrees also have <span class="font-bold text-hotpink">recommended add-ons</span>, that we hope you get to try!</i>
+    </p>
+
+    <h1 class="font-playfair text-5xl 2xl:text-6xl mt-6 lg:mt-8 mb-4">
+      <i>starters</i>
+    </h1>
+
+    <div class="pt-4 mb-24 grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" onclick="openOverlay(this.src)" src="./assets/miso_caesar.jpeg" alt="An overhead picture of a Miso Caesar Salad" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i>Vegetarian</i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Panko<br><br>Parmesan</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Miso Caesar Salad</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Romaine Lettuce with Housemade Miso Caesar Dressing</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">7</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" onclick="openOverlay(this.src)" src="./assets/potato_koroke.jpeg" alt="An overhead picture of a Potato Koroke" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Cherry Tomato<br><br>Tonkatsu Sauce<br><br>Spicy Mustard</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Potato Koroke</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Fried Potato Croquette Served Over Spring Mix</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">6</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" onclick="openOverlay(this.src)" src="./assets/karaage.jpeg" alt="An overhead picture of a Karaage" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Seared Romaine<br><br>Chimichurri<br><br>Ponzu Dipping Sauce<br><br>Spicy Shichimi Aioli</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Karaage</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Lightly Battered Fried Chicken with various sides</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">8</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+   
+
+    </div>
+
+    <h1 class="font-playfair text-5xl 2xl:text-6xl mt-6 lg:mt-8 mb-4">
+      <i>entrees</i>
+    </h1>
+
+    <div class="pt-4 mb-24 grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" onclick="openOverlay(this.src)" src="./assets/zaru_udon.jpeg" alt="An overhead picture of a Zaru Udon" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Daikon<br><br>Wasabi<br><br>Seaweed<br><br>Scallion</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Zaru Udon</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Cold Tsuyu Broth with Thick Udon Dipping Noodles</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    
+          <div class="flex flex-row justify-between w-[90%]">
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>Onsen Egg</i></h4>
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>+2</i></h4>
+          </div>
+
+        
+          <div class="flex flex-row justify-between w-[90%]">
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>Shrimp Tempura</i></h4>
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>+3</i></h4>
+          </div>
+
+        
+          <div class="flex flex-row justify-between w-[90%]">
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>Egg & Shrimp Tempura</i></h4>
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>+4</i></h4>
+          </div>
+
+        </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">13</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" onclick="openOverlay(this.src)" src="./assets/spicy_scallion.jpeg" alt="An overhead picture of a Spicy Scallion Noodles" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i>Vegan Option Available</i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Nori<br><br>Woodear Mushroom<br><br>Scallion<br><br>Cilantro<br><br>Spicy Garlic Scallion Sauce<br><br>Pickled Onion<br><br>Sesame Oil</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Spicy Scallion Noodles</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">With Marinated Mushrooms Tempura-Style, Dry Shanxi Noodles</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    
+          <div class="flex flex-row justify-between w-[90%]">
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>Onsen Egg</i></h4>
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>+2</i></h4>
+          </div>
+
+        </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">14</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" onclick="openOverlay(this.src)" src="./assets/seasonal_special.jpeg" alt="An overhead picture of a Seasonal Special" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i></i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Seasonal Special</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Check our pinned Instagram post for details!</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">15</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" src="./assets/chicken_ramen.jpeg" alt="An overhead picture of a PVD Chicken Ramen" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Scallion Onion<br><br>Wood Ear Mushroom<br><br>Toasted Seaweed<br><br>Spicy Miso Paste</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">PVD Chicken Ramen</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Confit Chicken, Ramen Noodles, Chicken Karaage, House-Made Shoyu Chicken Broth</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">16</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" src="./assets/sumo_katsudon.jpeg" alt="An overhead picture of a Sumo Katsudon" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i>Chimichurri<br><br>Tomato<br><br>Pickled Red Onion</i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Sumo Katsudon</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">16 oz. 24 Hour Braised Pork, White Rice, Sweet Korean Demi Glaze, Japanese Tornado Omelette</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    
+          <div class="flex flex-row justify-between w-[90%]">
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>Sweet Korean Demi Glaze</i></h4>
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>+0</i></h4>
+          </div>
+
+        
+          <div class="flex flex-row justify-between w-[90%]">
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>Curry Sauce</i></h4>
+            <h4 class="font-merriweather text-hotpink lg:text-lg 2xl:text-xl"><i>+3</i></h4>
+          </div>
+
+        </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">21</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+    </div> 
+
+    <h1 class="font-playfair text-5xl 2xl:text-6xl mt-6 lg:mt-8 mb-4">
+      <i>sides</i>
+    </h1>
+
+    <div class="pt-4 mb-24 grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" src="./assets/onsen_tamago.jpeg" alt="An overhead picture of a Onsen Tomago" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i></i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Onsen Tomago</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">“Hot Springs Egg” - Slow Cooked Soft Boiled Egg</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">2</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" src="./assets/shrimp_tempura.jpeg" alt="An overhead picture of a Shrimp Tempura" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i></i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Shrimp Tempura</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">Three Pieces of Tempura Fried Shrimp with Tail</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">3</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="bg-white flex flex-col mb-4">
+        <div class="h-3/4 flex flex-row">
+          <div class="w-3/4 aspect-w-1 aspect-h-1 pr-2">
+            <img onclick="openOverlay(this.src)" src="./assets/extra_noodles.jpeg" alt="An overhead picture of a Extra Bowl of Noodles" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="w-1/4 flex flex-col justify-between">
+            <h3 class="font-merriweather text-forest text-xl lg:text-2xl"><i></i></h3>
+            <h3 class="font-merriweather text-golden text-xl lg:text-2xl"><i></i></h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-2">
+          <div class="flex flex-col justify-between w-3/4">
+            <h3 class="font-playfair text-4xl 2xl:text-6xl font-bold w-[90%]">Extra Bowl of Noodles</h3>
+            <h4 class="font-merriweather lg:text-xl 2xl:text-2xl w-[90%]">More noodles. Udon, Buckwheat, or Ramen</h4>
+            
+        <div class="flex flex-col gap-1 mt-4">
+
+    </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center w-1/4">
+            <h3 class="font-montserrat text-graphite">
+              <span class="text-2xl">$</span><span class="text-7xl">4</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div id="imgOverlay" class="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center hidden z-50" onclick="closeOverlay()">
+      <img id="overlayImg" src="" class="transform lg:scale-[2] w-auto h-auto max-w-none max-h-none object-contain" />
+    </div>
+
+  </div>
+  <script src="./pvd_noodle_bar.js"></script>
+</body>
+</html>

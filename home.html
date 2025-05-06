@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spandan Goel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./overall.css"></link>
+
+  <link rel="stylesheet" href="./anims.css"></link>
+</head>
+<body class="scroll-smooth bg-white text-black font-[CommitMono]">
+  <div class="w-[90%] max-w-[1000px] mx-auto px-4 py-8">
+    <div class="navbar flex justify-between items-center mb-4 lg:mb-16">
+      <div class="hidden lg:flex items-center text-3xl lg:text-2xl">
+        <a href="./home.html">../spandan goel</a>
+      </div>
+
+      <div class="hidden lg:flex items-center text-2xl gap-8">
+        <a class="font-bold underline terminal-blue" href="#tab-selection">projects</a>
+        <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+      </div>
+
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-5xl">
+          <span class="inline-block align-top">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 opacity-0 lg:hidden flex-col text-xl gap-4 mb-8">
+      $
+      <a class="font-bold underline terminal-blue py-1" href="#tab-selection">projects</a>
+      <a class="underline py-1" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+    </div>
+
+    <header class="tagline-container">
+      <h6 class="text-xs sm:text-lg leading-tight" id="login-time">
+      </h6>
+      <h1 class="text-6xl lg:text-8xl leading-tight">
+          <span class="whitespace-nowrap">$ spandan </span>
+          <span class="block sm:inline">goel</span>
+      </h1>
+      <h2 class="text-4xl lg:text-5xl leading-tight mt-3">
+          <span id="dynamic-tagline" class="w-[80%] max-w-[1000px]">an engineer walked into a product design interview...</span>
+      </h2>
+    </header>
+
+    <div class="backtrace mt-72 lg:mt-[22rem] 2xl:mt-72">
+        <h4 class="text-xl sm:text-3xl terminal-red font-bold">
+            backtrace [career.cs]:
+        </h4>
+        <h4 class="text-xl sm:text-3xl pl-4">
+          <div class="flex flex-col md:flex-row md:justify-between md:gap-4">
+            <b><span>0: bs/ms/computer-science/brown</span></b>
+            <span>[providence.ri:2026]</span>
+          </div>
+        </h4>
+        <h4 class="text-xl sm:text-3xl pl-4">
+          <div class="flex flex-col md:flex-row md:justify-between md:gap-4">
+            <b><span>1: engineering/ramp</span></b>
+            <span>[new_york.ny:2025]</span>
+          </div>
+        </h4>
+        <h4 class="text-xl sm:text-3xl pl-4">
+          <div class="flex flex-col md:flex-row md:justify-between terminal-gray md:gap-4">
+            <b><span>2: engineering/aws</span></b>
+            <span>[seattle.wa:2024]</span>
+          </div>
+        </h4>
+        <h4 class="text-xl sm:text-3xl pl-4">
+          <div class="flex flex-col md:flex-row md:justify-between terminal-gray md:gap-4">
+            <b><span>3: engineering/aws</span></b>
+            <span>[seattle.wa:2023]</span>
+          </div>
+        </h4>
+    </div>
+
+    <div id="scroll-arrow" class="flex justify-center mt-12 2xl:mt-24 sm:mb-4 2xl:mb-16 sm:flex lg:hidden 2xl:flex"> 
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-70 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+
+    <div id="tab-selection" class="scroll-mt-4 tabs-selector relative text-black flex items-center mt-24 lg:mb-8 gap-6 sm:text-xs lg:text-4xl font-mono cursor-pointer">
+
+      <div id="arrow-left" class="hidden lg:block absolute left-0 -ml-8 lg:-ml-12 2xl:-ml-24 z-10 top-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+      <div class="block lg:hidden text-black font-[CommitMono] text-3xl cursor-pointer">
+        $
+        <select id="tab-select" class="text-black font-[CommitMono] text-3xl cursor-pointer px-2">
+          <option data-select="design" value="design">design.js</option>
+          <option data-select="systems" value="systems">systems.cpp</option>
+          <option data-select="graphics" value="graphics">graphics.gl</option>
+        </select>
+      </div>
+      <div class="hidden lg:block font-[CommitMono]">
+        $
+        <span class="tab selected-tab terminal-blue font-bold" data-tab="design">design.js</span>
+        |
+        <span class="tab" data-tab="systems">systems.cpp</span>
+        |
+        <span class="tab" data-tab="graphics">graphics.gl</span>
+      </div>
+
+      <div id="arrow-right" class="hidden lg:block absolute right-0 lg:-mr-12 -mr-24 z-10 top-1/2 -translate-y-1/2 transform rotate-180 cursor-pointer hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+    </div>
+
+    <div id="tabs-container" class="flex flex-row items-center justify-center mt-4 lg:mt-8 mb-8 relative w-full">
+
+      <div data-tab-content="design" class="transition-all opacity-100 duration-500 overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-04-17 16:00] build done in 25 hrs 
+            </p>
+          </div>
+
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10 max-h-[100px] max-w-[100px]" src="./assets/vector/search.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">giving the search box a makeover</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">why the internet's most popular component is the anti-hero</p>
+
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-blue pt-1 px-4 leading-tight">
+              <span class="bg-blue-700 font-bold text-white">[RUN]</span> [2025-03-02 12:00] uptime: 6 hrs 
+            </p>
+          </div>
+
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10 max-h-[100px] max-w-[100px]" src="./assets/vector/drink.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">getting a drink at Andrews: impossible?</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">finding out why even 4 dispensers can't save the line</p>
+
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-03-13 18:00] build done in 9 hrs 
+            </p>
+          </div>
+
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end" onclick="window.location.href='./responsive_redesign.html'">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-8 max-h-[100px] max-w-[100px]" src="./assets/vector/noodle.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">a fresh look for an old bowl</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">redesigning <i>Providence Noodle Bar</i>'s menu page</p>
+
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-blue pt-1 px-4 leading-tight">
+              <span class="bg-blue-700 font-bold text-white">[RUN]</span> [2025-05-05 22:30] uptime: 13 hrs 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-tab-content="systems" class="transition-all max-h-0 max-w-0 opacity-0 duration-500 overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+          
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+              <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-tab-content="graphics" class="transition-all max-h-0 max-w-0 opacity-0 duration-500 overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <!-- Card 1 -->
+          <div class="article-card relative aspect-square border border-black px-4 py-3 font-mono text-sm text-black w-full flex flex-col justify-end ">
+            <img class="w-1/2 ml-1 lg:ml-2 mb-8 lg:mb-10" src="./assets/vector/Warp.svg"></img>
+            <h3 class="article-title text-left text-3xl lg:text-4xl 2xl:text-5xl font-[CommitMono] font-semibold w-full">an iterative design<wbr> for Warp community</h3>
+            <p class="text-left text-xl lg:text-2xl font-[CommitMono] mt-2 mb-16">connecting Warp users <i>inside</i> the terminal</p>
+            <p class="absolute bottom-2 left-0 w-full text-2xs lg:text-md 2xl:text-[1.1rem] terminal-green pt-1 px-4 leading-tight">
+            <span class="bg-green-700 font-bold text-white">[OK]</span> [2025-05-01 16:22] build done in 25 hrs 
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+    
+  <script src="./details.js"></script>
+  <script src="./anims.js"></script>
+  <script src="./tabs.js"></script>
+  <script src="./navbar.js"></script>
+</body>
+</html>
