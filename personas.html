@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spandan Goel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./overall.css"></link>
+
+  <link rel="stylesheet" href="./anims.css"></link>
+</head>
+<body class="scroll-smooth bg-white text-black font-[CommitMono]">
+  <div class="w-[90%] max-w-[1000px] mx-auto px-4 py-8">
+    <div class="navbar flex justify-between items-center mb-4 lg:mb-16">
+      <div class="hidden lg:flex items-center text-3xl lg:text-2xl">
+        <a href="./home.html">../spandan goel</a>
+      </div>
+
+      <div class="hidden lg:flex items-center text-2xl gap-8">
+        <a class="font-bold underline terminal-blue" href="./home.html#tab-selection">projects</a>
+        <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+      </div>
+
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-5xl">
+          <span class="inline-block align-top">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="transition-all duration-300 ease-in-out overflow-hidden ml-1 max-h-0 opacity-0 lg:hidden flex-col text-xl gap-4 mb-8">
+      $
+      <a class="underline" href="./home.html">../sg14</a>
+      <a class="font-bold underline terminal-blue py-1" href="./home.html#tab-selection">projects</a>
+      <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
+    </div>
+
+    <header class="tagline-container">
+      <h1 class="text-6xl lg:text-8xl font-bold leading-tight mt-3">
+        getting a drink at Andrews: impossible?
+      </h1>
+      <h2 class="text-3xl lg:text-5xl leading-tight mt-3">
+        finding out why even 4 dispensers can't save the line
+      </h2>
+
+      <h3 class="text-md lg:text-2xl 2xl:text-xl leading-tight mt-8">
+        -rw-r--r-- 1 spandan <span class="font-bold">designers 9H</span> Mar 13 18:00 drinks_andrews 
+      </h3>
+
+      <p class="text-md lg:text-2xl 2xl:text-xl lg:mb-24 2xl:mb-0 leading-tight mt-8">
+        observing user patterns... 100%<br>
+        drinking water... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100%<br>
+        dreaming of dispensers... &nbsp;100%<br>
+      </p>
+
+      <div id="scroll-arrow" class="flex justify-center mt-24 lg:mt-32 mb-36 2xl:mb-36 sm:flex lg:hidden 2xl:flex"> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black opacity-70 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </header>
+
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl -ml-2 leading-tight">[0] the investigation</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        the scene: it's <i class="text-rose-300">Pho Friday</i> at Andrews. you're in a sea of freshmen and have been waiting for 473 years to get your pho. you're thirsty, and a drink is all you need.
+      </p>
+    
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        for a ui/ux designer, this is a <b class="text-red-400">user flow</b> waiting to be optimized. you're the user, and the drink is the goal. how do you get there?
+      </p>
+    
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        to find this out, we asked Andrews enjoyers some questions:
+      </p>
+    
+      <ul class="px-12 mt-4 space-y-2 list-disc text-left list-inside">
+        <li>How <b class="text-teal-200">intuitive</b> did you find the interface when selecting your drink?</li>
+        <li>Were there any moments where you <b class="text-red-300">weren’t sure what to</b> do next?</li>
+        <li>How would you describe the <b class="text-yellow-300">overall responsiveness</b> of the touchscreen?</li>
+        <li>Were there any <b class="text-red-300">issues or inconveniences</b> you encountered while using the dispenser?</li>
+        <li>If you could <b class="text-yellow-300">change one thing</b> about this dispenser, what would it be?</li>
+      </ul>
+    
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        for those unfamiliar with Andrews, here's a quick illustration of what's going on:
+      </p>
+      <img src="./assets/personas/0_state.png" alt="Initial Andrews Mockup" class="rounded-lg shadow-lg" />
+      <p class="text-center text-gray-400 text-sm">Initial mockup of Andrews drinks area.</p>
+    </div>
+    
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl -ml-2 mt-12 leading-tight">[1] keen observations</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        some initial people-watching and observation of Andrews showed that:
+      </p>
+    
+      <ul class="px-12 mt-4 space-y-2 list-disc text-left list-inside">
+        <li>people often <b class="text-red-300">wait long times</b> for other people to finish getting their drinks</li>
+        <li>people have a hard time with the <b class="text-red-300">ice accumulating in the dispenser</b> gates and giving them less space to pour their drink</li>
+        <li>the screen can be <b class="text-red-300">laggy and unresponsive</b> at times, and <b class="text-red-300">does not show the number of sub-items</b> that are available</li>
+        <li>people further back in line have <b class="text-red-300">no idea of how many options</b> are still available</li>
+        <li>gathering cups and straws from the side is difficult as it only works <b class="text-red-300">for one person at a time</b></li>
+        <li>the secondary dispensers are <b class="text-red-300">wasteful in area</b> and don't offer many options</li>
+      </ul>
+    
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        and some <b>more detailed</b> people-talking gave us 3 great interviews:
+      </p>
+    
+      <div class="table overflow-x-auto w-full mt-8 mb-16">
+        <table class="w-full text-left text-md">
+          <thead>
+            <tr class="text-gray-700 font-bold bg-gray-200">
+              <th class="px-4 py-2 whitespace-nowrap">Interviewee</th>
+              <th class="px-4 py-2 whitespace-nowrap">Insights</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 whitespace-nowrap font-bold text-red-500">Mr. Andrews Pho</td>
+              <td class="px-4 py-2">
+                Found interface frustrating, unclear drink availability, long lines, slow responsiveness, wants faster system and clearer labels.
+              </td>
+            </tr>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 whitespace-nowrap font-bold text-teal-500">Ms. Chili Crisp</td>
+              <td class="px-4 py-2">
+                Found interface intuitive, responsive touchscreen, no confusion, smooth experience, wants more flavor options.
+              </td>
+            </tr>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 whitespace-nowrap font-bold text-amber-500">Dr. Yakisoba</td>
+              <td class="px-4 py-2">
+                Noted ice accumulation issue, usable interface, but distracted by messiness and broken dispenser features.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl -ml-2 mt-12 leading-tight">[2] the duality of Andrews enthusiasts</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        here's two personas that describe exactly what the spectrum of Andrews-goers looks like:
+      </p>
+    
+      <div class="flex justify-center w-full space-x-4 p-4">
+        <div class="text-left w-full space-y-4">
+          <h3 class="text-xl"><b class="text-teal-500">Calm Ms. Chili Crisp</b></h3>
+          <img src="./assets/personas/calm_persona.png" alt="Initial Andrews Mockup" class="rounded-lg shadow-lg" />
+          <p class="text-center text-gray-400 text-sm">good end of spectrum.</p>
+        </div>
+    
+        <div class="text-left w-full space-y-4">
+          <h3 class="text-xl"><b class="text-red-500">Annoyed Mr. Andrews Pho</b></h3>
+          <img src="./assets/personas/rushed_persona.png" alt="Initial Andrews Mockup" class="rounded-lg shadow-lg" />
+          <p class="text-center text-gray-400 text-sm">bad end of spectrum.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl -ml-2 mt-12 leading-tight">[3] storyboard</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        here's a big storyboard to explain it all:
+      </p>
+    
+      <div class="flex justify-center w-full space-x-4 p-4 flex-wrap gap-4">
+        <img src="./assets/personas/0_state.png" class="rounded-lg shadow-lg" alt="Storyboard 0" />
+        <img src="./assets/personas/1_state.png" class="rounded-lg shadow-lg" alt="Storyboard 1" />
+        <img src="./assets/personas/2_state.png" class="rounded-lg shadow-lg" alt="Storyboard 2" />
+        <img src="./assets/personas/3_state.png" class="rounded-lg shadow-lg" alt="Storyboard 3" />
+        <img src="./assets/personas/4_state.png" class="rounded-lg shadow-lg" alt="Storyboard 4" />
+        <img src="./assets/personas/5_state.png" class="rounded-lg shadow-lg" alt="Storyboard 5" />
+        <img src="./assets/personas/6_state.png" class="rounded-lg shadow-lg" alt="Storyboard 6" />
+      </div>
+    </div>
+
+
+  </div>
+  
+    
+  <script src="./details.js"></script>
+  <script src="./anims.js"></script>
+  <script src="./tabs.js"></script>
+  <script src="./navbar.js"></script>
+</body>
+</html>
