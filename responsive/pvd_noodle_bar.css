@@ -46,3 +46,7 @@
 .text-graphite {
   color: #19171c;
 }
+
+img {
+  border: 2px solid #19171c;
+}
