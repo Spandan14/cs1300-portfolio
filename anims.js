@@ -1,4 +1,4 @@
-const texts = ["interfacing designs -> designing interfaces", "from syscalls to design calls", "pipes to cards"];
+const texts = ["an engineer walked into a product design interview...", "interfacing designs -> designing interfaces", "from syscalls to design calls", "os pipes to js cards"];
 let textIndex = 0;
 const dynamicTagline = document.getElementById("dynamic-tagline");
 
@@ -37,5 +37,5 @@ function fullAnimation() {
 
 setTimeout(() => {
     fullAnimation();
-}, 1500);
+}, 6000);
 

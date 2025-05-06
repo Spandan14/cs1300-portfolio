@@ -31,7 +31,7 @@
     <div id="mobile-menu" class="transition-all duration-300 ease-in-out overflow-hidden ml-1 max-h-0 opacity-0 lg:hidden flex-col text-xl gap-4 mb-8">
       $
       <a class="underline" href="./home.html">../sg14</a>
-      <a class="font-bold underline terminal-blue py-1" href="#tab-selection">projects</a>
+      <a class="font-bold underline terminal-blue py-1" href="./home.html#tab-selection">projects</a>
       <a class="underline" href="./assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>
     </div>
 
@@ -73,7 +73,7 @@
       
 
       <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
-        But this is one of the key things that the online menu <span class="terminal-red font-bold">misses</span> out on! The menu is just a simple list of dishes, and the wall of text below every image bores the reader, misleading them into thinking that this is just another restaurant. <br>
+        But this is one of the key things that the <a class="terminal-blue font-bold underline" href="https://pvdnoodlebar.com/providence-providence-noodle-bar-food-menu">online menu</a> <span class="terminal-red font-bold">misses</span> out on! The menu is just a simple list of dishes, and the wall of text below every image bores the reader, misleading them into thinking that this is just another restaurant. <br>
       </p>
 
       <br>
@@ -124,7 +124,67 @@
         The lack of accessibility is particularly concerning - it might look okay on an initial WAVE scan, but multiple images have no alternative text, just an empty string. Additionally, the dietary restrictions note has very low contrast, and the background image's colors are very close to the solid white backgrounds of the cards. 
       </p>
     </div>
+
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl -ml-2 mt-12 leading-tight">[1] implementation hour</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        I started by creating a <a class="terminal-blue font-bold underline" href="https://www.figma.com/design/YdV5CcYywOjCC1rogDUjDt/pvd-noodle-redesign?node-id=0-1&t=YNgmYqUMZxfu4345-1">Figma file</a> with the original menu, and then I created a new page for my redesign. I used the original menu as a reference, but I also took inspiration from other menus that I liked, particularly that of Mokban, which is another restaurant in the area.<br>
+      </p>
+
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        This table will help summarize the main the edits I made.
+      </p>
+
+      <div class="table overflow-x-auto w-full mt-8 mb-16">
+        <table class="w-full text-left text-md">
+          <thead>
+            <tr class="text-gray-700 font-bold bg-gray-200">
+              <th class="px-4 py-2 terminal-red whitespace-nowrap">Old</th>
+              <th class="px-4 py-2 terminal-green whitespace-nowrap">New</th>
+              <th class="px-4 py-2 whitespace-nowrap">Why?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2">static layout, not perfectly responsive</td>
+              <td class="font-bold px-4 py-2">enhanced 2-column/1-column responsive layout</td>
+              <td class="px-4 py-2">a more mobile-friendly layout just helps customers browse the menu more easily! who's bringing their laptop with them?</td>
+            </tr>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 ">cards with backgrounds and shadows, and a background image</td>
+              <td class="font-bold px-4 py-2">plain white background with a grid layout</td>
+              <td class="px-4 py-2">the cards get in the way of responsiveness and don't add any info</td>
+            </tr>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 ">walls of text describing menu items, small dietary restriction note at the end</td>
+              <td class="font-bold px-4 py-2">per-dish breakdown of pairings, dietary restrictions, add-ons, etc.</td>
+              <td class="px-4 py-2">no user wants to read a wall of text to figure out what they're getting. the newer, more playful layout also draws customers into understanding the menu</td>
+            </tr>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 ">Montserrat as the font of choice, everywhere</td>
+              <td class="font-bold px-4 py-2">a balanced usage of serif and sans serif fonts</td>
+              <td class="px-4 py-2">not only does it add more flair, it hits home the cozy vibe that PVD noodle bar is going for at their venue, which was previously missing in the website</td>
+            </tr>
+            <tr class="even:bg-gray-50">
+              <td class="px-4 py-2 ">no image interactions</td>
+              <td class="font-bold px-4 py-2">image overlays with magnified view onclick</td>
+              <td class="px-4 py-2">users are able to see the image more clearly, see what they're ordering, and this also makes the menu more accessible to the visually impaired</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1 class="text-3xl lg:text-5xl -ml-2 mt-12 leading-tight">[2] the final product</h1>
+      <p class="text-md lg:text-lg leading-tight mt-4 tracking-tight">
+        The redesign is a lot nicer visually, and is much more accessible than the previous menu. Nevertheless, there's a lot that can still be added to this. For example, I omit the lunch menu 
+        in this design, as it wouldn't be too much different from the main menu, and PVD might want this to be a separate page anyway. You can check it out <a class="terminal-blue font-bold underline" href="./responsive/pvd_noodle_bar_menu.html">here</a>!
+      </p>
+
+    </div>
   </div>
+  
     
   <script src="./details.js"></script>
   <script src="./anims.js"></script>
