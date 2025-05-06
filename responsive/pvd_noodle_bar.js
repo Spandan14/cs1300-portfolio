@@ -1,11 +1,13 @@
-.font - montserrat {
-    font - family: 'Montserrat', sans - serif;
+function openOverlay(src) {
+    const overlay = document.getElementById("imgOverlay");
+    const img = document.getElementById("overlayImg");
+    img.src = src;
+    overlay.classList.remove("hidden");
 }
 
-.font - playfair {
-    font - family: 'Playfair Display', serif;
-}
-
-.font - merriweather {
-    font - family: 'Merriweather', serif;
+function closeOverlay() {
+    const overlay = document.getElementById("imgOverlay");
+    const img = document.getElementById("overlayImg");
+    img.src = "";
+    overlay.classList.add("hidden");
 }
